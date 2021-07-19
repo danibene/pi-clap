@@ -175,7 +175,7 @@ class Device:
         # self.config.channels = int(self.defaultDevice['maxInputChannels'])
         # self.config.rate = int(self.defaultDevice['defaultSampleRate'])
         self.config.channels = 2
-        self.config.rate = 24000
+        # self.config.rate = 24000
 
     def readData(self):
         """Reads a single chunk of binary data from stream"""

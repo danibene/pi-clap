@@ -142,7 +142,7 @@ class Device:
         self.config = config
         self.input = pyaudio.PyAudio()
         self.maxSamples = []
-        os.system('clear')
+        os.system('cls' if os.name == 'nt' else 'clear')
         self.__setInputDevice()
         self.calibrateBufferSize(calibrate)
         # sys.exit(0)
